@@ -3,7 +3,7 @@ const generateManager = function (manager) {
   return `
     <div>
         <div class="card m-3">
-            <div class="card-header bg-danger bg-opacity-25 text-center">
+            <div class="card-header bg-warning bg-opacity-40 text-center">
                 <h3>${manager.name}</h3>
                 <h5><i class="material-icons">manage_accounts</i> Manager</h5>
             </div>
@@ -23,7 +23,7 @@ const generateEngineer = function (engineer) {
   return `
     <div>
         <div class="card m-3">
-            <div class="card-header bg-success bg-opacity-25 text-center">
+            <div class="card-header bg-warning bg-opacity-40 text-center">
                 <h3>${engineer.name}</h3>
                 <h5><i class="material-icons">construction</i> Engineer</h5>
             </div>
@@ -42,7 +42,7 @@ const generateIntern = function (intern) {
   return `
     <div>
         <div class="card m-3">
-            <div class="card-header bg-warning bg-opacity-25 text-center">
+            <div class="card-header bg-warning bg-opacity-40 text-center">
                 <h3>${intern.name}</h3>
                 <h5><i class="material-icons">school</i> Intern</h5>
             </div>
@@ -61,7 +61,7 @@ const generateEmployee = function (employee) {
   return `
     <div>
         <div class="card m-3">
-            <div class="card-header bg-primary bg-opacity-25 text-center">
+            <div class="card-header bg-warning bg-opacity-40 text-center">
                 <h3>${employee.name}</h3>
                 <h5><i class="material-icons">account_circle</i> Employee</h5>
             </div>
@@ -126,7 +126,7 @@ const generateHTML = function (teamMembers) {
         </head>
         <body>
             <header>
-                <h1 class="navbar justify-content-center text-white bg-info bg-opacity-75 mb-4">Dream Team</h1>
+                <h1 class="navbar justify-content-center text-white bg-secondary bg-opacity-75 mb-4">Dream Team</h1>
             </header>
             <main class="d-flex justify-content-evenly flex-wrap">
                 ${teamMembers}
